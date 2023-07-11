@@ -4,3 +4,9 @@ llame a la función anteriormente creada ``findArrayIndex`` y obten el indice pa
 javascript ``.splice()`` para eliminar el elemento del array. Finalmente retorna el array.
 
 De nuevo haz varios ejemplos para practicar y comprueba que funcionan correctamente.
+
+
+removeItem(array, texto){
+    let indexToDelete = findArrayIndex(array, texto);
+    array.slice(indexToDelete)
+}

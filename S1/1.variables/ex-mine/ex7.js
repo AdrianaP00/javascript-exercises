@@ -1,5 +1,4 @@
 let globalBasePrice = 10000;
-
 globalBasePrice = 25000;
 
 const car1 = {name: 'BMW m&m', basePrice: 50000, finalPrice: 60000};
