@@ -1,7 +1,8 @@
-for (let i = 0; index < products.length; i++) {
-    const cami = products[i];
+const products = ['Camiseta de Pokemon', 'Pantalón coquinero', 'Gorra de gansta', 'Camiseta de Basket', 'Cinrurón de Orión', 'AC/DC Camiseta']
+
+products.forEach(product => {
+        if(product.toLowerCase().includes('Camiseta'.toLowerCase())){ 
+            console.log(product);
+        }
+    })
     
-    if(element.toLowerCase().includes('Camiseta'.toLowerCase())){ 
-        console.log(cami);
-    }
-}
