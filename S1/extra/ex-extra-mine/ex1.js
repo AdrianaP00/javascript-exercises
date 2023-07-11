@@ -1,8 +1,12 @@
-for (let i = 0; i < user.length; i++) {
+const users = [{name: "Abel", years: 43}, 
+{name: "Maria", years: 18}, 
+{name: "Pedro", years: 14}, 
+{name: "Samantha", years: 32}, 
+{name: "Raquel", years: 16}];
 
-    if(user.years <= 18){
-        console.log('Usuario mayor de edad')
-    } else{
-        console.log('Usuario menor de edad')
-    }
+for (let i = 0; i < users.length; i++) {
+    
+    const person = users[i];
+    
+    console.log(person.years <= 18 ? 'Usuarios menores de edad:' :'Usuarios mayores de edad:', person.name) 
 }

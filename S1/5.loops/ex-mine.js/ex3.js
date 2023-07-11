@@ -1,5 +1,5 @@
-for (let first = 0; first < 10; first++) {
-    if(first === 9){
+for (let i = 0; i < 10; i++) {
+    if(i == 9){
         console.log('Dormido!')
     } else{
         console.log('Intentando dormir')

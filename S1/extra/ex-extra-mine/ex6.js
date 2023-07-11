@@ -9,11 +9,11 @@ for (let i = 0; i < products.length; i++) {
 
     const food = products[i];
 
-    if(sellCount > 20){
+    if(food.sellCount > 20){
 
           goodProducts.push(food)
 
     } else {
           badProducts.push(food);
     }
-}
+} console.log(goodProducts)

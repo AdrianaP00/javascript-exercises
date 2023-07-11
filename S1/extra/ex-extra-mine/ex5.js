@@ -1,10 +1,16 @@
-let sum = 0; 
-sum = sum + media.sellCount;
+const products = [
+  { name: "Gorra de rodilla", sellCount: 10 },
+  { name: "Pantalón de pana", sellCount: 302 },
+  { name: "Reloj de papel albal", sellCount: 23 },
+  { name: "Inpar de zapatos", sellCount: 6 },
+];
 
-for(let i = 0; i < products.length; i++){
-const media = products[i];
+let sum = 0;
 
- sum += media.sellCount;
-
-console.log (sum / products.length)
+for (let i = 0; i < products.length; i++) {
+  const element = products[i];
+  sum = sum + element.sellCount;
+  console.log(element.sellCount);
+  console.log(sum);
 }
+console.log(sum / products.length)
