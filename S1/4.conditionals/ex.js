@@ -1,11 +1,3 @@
-En base al código siguiente, muestra los mensajes correctos por consola.
-
-```js
-const number1 = 10;
-const number2 = 20;
-const number3 = 2;
-
-// ejemplo
 if(number1 === 10){
     console.log('number1 es estrictamente igual a 10')
 }
@@ -33,5 +25,3 @@ if (number3 * 5 == number1 * 2 = number2) {
 if (number2 / 2 == number1 || number1 / 5 == number3 ) {
   console.log("number2 entre 2 es igual a number1 O number1 entre 5 es igual a number3");
 }
-
-```
