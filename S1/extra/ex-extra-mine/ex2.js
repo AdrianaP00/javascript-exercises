@@ -9,9 +9,6 @@ for (let i = 0; i < foodSchedule.length; i++) {
 
 const food = foodSchedule[i];
 
-    if(!foodSchedule.isVegan){
-                food.name = fruits[fru];
-                fru++;
-    } 
+    console.log(!foodSchedule.isVegan ? food.name = fruits[fru]: null)
     console.log(foodSchedule)
 }
