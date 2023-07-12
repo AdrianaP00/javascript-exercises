@@ -33,12 +33,38 @@ const users = [
   },
 ];
 
-let volSum = 0;
-let volCount = 0;
+let arrayWave = 0;
+let arrayShower = 0;
+let arrayWind = 0;
+let arrayFirecamp = 0;
+let arrayTrain = 0;
 
 for (const user of users) {
-  for (const key in user.favoritesSounds) {
-    volSum += user.favoritesSounds[key].volume;
-    volCount++; 
-  }
-} console.log(volSum / volCount)
+  const userKeys = Object.keys(user.favoritesSounds);
+
+  userKeys.forEach((key) => {
+
+    switch (key) {
+      case "waves":
+        arrayWave++;
+        break;
+
+      case "wind":
+        arrayWind++;
+        break;
+
+      case "firecamp":
+        arrayFirecamp++;
+        break;
+
+      case "shower":
+        arrayShower++;
+        break;
+
+      case "train":
+        arrayTrain++;
+        break;
+    }
+  });
+}
+console.log(arrayWave);

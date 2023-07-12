@@ -1,7 +1,9 @@
 const prompt = require("prompt-sync")();
-let choice = inputMe();
+
+let choice;
+
 do {
- 
+  choice = inputMe();
   if (choice == 1) {
     rollDice();
   }
@@ -9,14 +11,15 @@ do {
 
 function rollDice() {
   let cpu = Math.floor(Math.random() * 6);
+  console.log(cpu)
   let me = Math.floor(Math.random() * 6);
+  console.log(me)
 
   let ret = compare(cpu, me);
   console.log(ret);
 }
 
 function compare(cpu, me) {
-    choice = 2;
   if (cpu == me) {
     return "Tie";
   } else if (cpu < me) {
@@ -24,7 +27,6 @@ function compare(cpu, me) {
   } else {
     return "You lose";
   }
- 
 }
 
 function inputMe() {

@@ -8,5 +8,5 @@ De nuevo haz varios ejemplos para practicar y comprueba que funcionan correctame
 
 removeItem(array, texto){
     let indexToDelete = findArrayIndex(array, texto);
-    array.slice(indexToDelete)
+    array.splice(indexToDelete,1)
 }

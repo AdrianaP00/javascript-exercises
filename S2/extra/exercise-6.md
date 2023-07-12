@@ -4,5 +4,6 @@ resultante.
 
 Sugerencia de array:
 ````js
-['Mesirve', 'Cristiano Romualdo', 'Fernando Muralla', 'Ronalguiño']
+
 ````
+
