@@ -14,3 +14,9 @@ const exams = [
     {name: 'Keanu Reeves', score: 10}
 ];
 ```
+
+const totalScore = exams.reduce( function(accumulador, exam) => {
+    return accumulador + exam.score;
+}, 0);
+
+console.log(totalScore);

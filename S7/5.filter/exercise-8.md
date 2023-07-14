@@ -21,3 +21,14 @@ const streamers = [{name: 'Rubius', age: 32, gameMorePlayed: 'Minecraft'}, {name
 </body>
 </html>
 ````
+const input = document.querySelector('input');
+
+const button = document.querySelector('button');
+
+button.addEventListener('click', () => {
+  const word = input.value;
+
+  const filteredStreamers = streamers.filter(streamer => streamer.name.includes(word));
+
+  console.log(filteredStreamers);
+});

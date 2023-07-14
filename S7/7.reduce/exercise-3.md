@@ -14,3 +14,11 @@ const exams = [
     {name: 'Keanu Reeves', score: 10}
 ];
 ```
+
+const totalScore = exams.reduce((acc, exam) => {
+    return acc + exam.score;
+}, 0);
+
+const averageScore = totalScore / exams.length;
+
+console.log(averageScore)

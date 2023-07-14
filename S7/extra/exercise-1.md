@@ -11,3 +11,8 @@ const videogames = [
 '], score: 10},
 ]
 ```
+const rpgVideogames = videogames.filter(videogame => videogame.genders.includes('RPG'));
+
+const averageScore = rpgVideogames.reduce((acc, videogame) => acc + videogame.score, 0) / rpgVideogames.length;
+
+console.log(averageScore);

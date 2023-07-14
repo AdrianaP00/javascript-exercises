@@ -6,14 +6,3 @@ const countries = [{title: 'Random title', imgUrl: 'https://picsum.photos/300/20
 
 
 
-for (const country of countries) {
-  const div_ = document.create("div");
-   const h4_ = document.create("h4");
-   const img_ = document.create("img");
-  h4_.appendChild(div_);
-  img_.appendChild(div_);
-  h4_.textContent = country.title;
-   img_.src = country.imgUrl;
-   return  document.body.appendChild(div_)
-}
-

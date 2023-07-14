@@ -16,3 +16,10 @@ const exams = [
     {name: 'Keanu Reeves', score: 10}
 ];
 ```
+
+const passedExams = exams.filter(exam => exam.score >= 5);
+const totalScore = passedExams.reduce((accumulador, exam) => {
+    return accumulador + exam.score;
+}, 0);
+
+console.log(totalScore);
