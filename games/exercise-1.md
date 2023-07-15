@@ -94,3 +94,4 @@ imágenes se volverán a ocultar**.
 
 Si has cumplido todas las condiciones...Enhorabuena! tienes un juego de memoría bastante resultón! Además si te
 interesa subir la dificultad no tienes más que hacer el array más grande y meter más imagenes...¿te atreves? :D
+
