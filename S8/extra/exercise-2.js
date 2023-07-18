@@ -20,14 +20,11 @@ const createDiaryNotes = (diaryNotes) => {
         const button$$ = document.createElement('button');
         button$$.textContent = 'X';
         button$$.addEventListener('click', () => {removeDiaryNote(div$$)})
-<<<<<<< HEAD
-=======
 
         // button$$.addEventListener('click', function(){
         //     div$$.remove()
         // })
 
->>>>>>> 44257c1f97f0195d5ad7d5d683e2c2ca46cb13d5
         div$$.appendChild(button$$);
         document.body.appendChild(div$$);
     }

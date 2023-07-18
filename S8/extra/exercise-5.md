@@ -3,3 +3,4 @@ Haz una peticion a la api de pokemons `https://pokeapi.co/api/v2/pokemon` y pint
 Por ello tendrás que hacer para cada pokemon otra petición a la url de la propiedad (.url). Esto te devolverá el detalle del pokemon donde encontrarás su imagen (.sprites.front_default). 
 
 Para que no haya problema con el pintado de los pokemons os recomendamos que hagais un `Promise.all` y que así todos los pokemons vengan en orden.
+

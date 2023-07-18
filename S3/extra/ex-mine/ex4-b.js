@@ -18,10 +18,14 @@ for (const country of countries) {
 }
 
 
-function cancel(countries) {
-  return countries.pop;
+function cancel() {
+const div_= document.querySelectorAll("div")
+div_[div_.length - 1].remove()
+
+console.log(div_)
 }
 
 const butt_ = document.createElement("button");
 butt_.textContent = "Delate";
-butt_.addEventListener("click", cancel(countries));
+butt_.addEventListener("click", cancel);
+document.body.appendChild(butt_)
